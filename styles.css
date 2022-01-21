@@ -1,0 +1,294 @@
+@charset "utf-8";
+@font-face{
+	font-family: FLL;
+	src:url("Fonts/FLL.ttf") format('truetype'),
+		url("Fonts/FLL.woff") format('woff'),
+		url("Fonts/FLL.woff2") format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
+body{
+	margin:0px;
+    padding:0px;
+	border: 0px;
+	box-sizing: border-box;
+}
+
+li, a, button {
+	font-family: 'FLL';
+	font-size: 16px;
+	color: black;
+}
+
+header {
+	margin:0px;
+    padding:0px;
+	display: flex;
+	align-items: center;
+	background-color: #000000;
+}
+.nav_links img{
+	margin:0px;
+    padding:0px;
+	border: 0px;
+	max-width: 10%;
+}
+.nav_links {
+	list-style: none;
+}
+
+.nav_links li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.nav_links li a {
+	color: white;
+	font-variant: small-caps;
+	font-family: Times, Times New Roman, sans-serif;
+	transition: all 0.3s ease 0.3s;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.nav_links li a:hover{
+	text-decoration: underline;
+}
+
+.float-container {
+    border: 0px;
+	margin: 0px;
+    padding: 0px;
+	display: flex;
+	height: 100%;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding-left: 20px;
+	display: flex;
+	
+} 
+.description{
+	display: flex;
+	margin-left: 60px;
+}
+.me img{
+    max-width: 100%;
+	display: flex;
+}
+.float-child2 {
+    width: 50%;
+    float: left;
+	display: flex;
+} 
+
+.typedout{
+	
+}
+
+.typedout p{
+    border-right: .15em solid orange;
+    font-family: "Courier";
+    font-size: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+	display: flex;
+}
+
+.typedout p:nth-child(1){
+
+	width: 118px; /* manually set width */
+    -webkit-animation: type3 5s steps(20, end), blink .5s step-end ;
+    animation: type3 2s steps(20, end), blink .5s step-end ;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.typedout p:nth-child(3){
+
+	width: 165px; /* manually set width */
+    opacity: 0;
+    -webkit-animation: type3 5s steps(20, end), blink .5s step-end ;
+    animation: type3 2s steps(20, end), blink .5s step-end ;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.typedout p:nth-child(5){
+
+	width: 575px; /* manually set width */
+	opacity: 0;
+    -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.projects-done {
+	max-width: 100%;
+	background-color: antiquewhite;
+	display: flex;
+}
+.projects-done-text{
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom: 100px;
+}
+.projects-done p{
+
+	font-family: "Courier";
+	font-size: 30px;
+	margin: 40px;
+}
+
+.projects-done a{
+	font-family: "Courier";
+	font-size: 30px;
+}
+
+.gallery-container{
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 300px;
+}
+
+.project-header{
+	max-width: 100%;
+	display: flex;
+}
+
+.project-header p{
+	font-family: "Courier";
+	font-size: 30px;
+	margin: 40px;
+}
+.gallery-item{
+	width: 300px;
+	margin: 10px;
+}
+
+.java{
+	max-height: 100%;
+	height: 100%;
+	max-width: 100%;
+	background-image: url("java.svg") ;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+}
+.css{
+	max-height: 100%;
+	height: 100%;
+	max-width: 100%;
+	background-image: url("css.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+}
+
+.js{
+	max-height: 100%;
+	height: 100%;
+	max-width: 100%;
+	background-image: url("js.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: Black;
+  color: white;
+}
+
+footer p{
+	font-size: 16px;
+}
+footer a{
+	color: white;
+	font-size: 16px;
+}
+
+form{
+	margin-left: 50px;
+	margin-top: 50px;
+	transition: all 4s ease-in-out;
+	font-family: "Courier";
+}
+
+.form-control{
+	width: 600px;
+	background: transparent;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color: #000000;
+	font-size: 18px;
+	margin-bottom: 16px;
+	font-family: "Courier";
+}
+
+form .submit:hover{
+	background-color: lightgray;
+	cursor: pointer;
+}
+
+
+
+

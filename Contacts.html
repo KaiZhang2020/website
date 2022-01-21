@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contacts</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul class="nav_links">
+				<a href="#"><img src="logo.png"></a>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Projects.html">Projects</a></li>
+				<li><a href="#">Contacts</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="project-header">
+		<p>If you wish to Contact me<br><br>Please fill out<br><br> your infomation and details below:</p>
+	</div>
+	<div class="contact-form">
+		<form id="contact-form" method="post" action="contact-form-handler.php">
+			<input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+			<input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+			<textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+			<input type="submit" class="form-control submit" value="SEND MESSAGE">
+		</form>
+	</div>
+</body>
+</html>

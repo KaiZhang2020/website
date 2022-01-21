@@ -1,0 +1,4 @@
+[29-Dec-2021 04:49:28 UTC] PHP Warning:  mail(): &quot;sendmail_from&quot; not set in php.ini or custom &quot;From:&quot; header missing in E:\MyFirstSite\website\contact-form-handler.php on line 15
+[29-Dec-2021 04:49:38 UTC] PHP Warning:  mail(): &quot;sendmail_from&quot; not set in php.ini or custom &quot;From:&quot; header missing in E:\MyFirstSite\website\contact-form-handler.php on line 15
+[29-Dec-2021 04:53:27 UTC] PHP Warning:  mail(): &quot;sendmail_from&quot; not set in php.ini or custom &quot;From:&quot; header missing in E:\MyFirstSite\website\contact-form-handler.php on line 18
+[10-Jan-2022 08:01:55 UTC] PHP Warning:  mail(): &quot;sendmail_from&quot; not set in php.ini or custom &quot;From:&quot; header missing in E:\MyFirstSite\website\contact-form-handler.php on line 18
